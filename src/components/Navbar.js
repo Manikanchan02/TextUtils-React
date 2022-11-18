@@ -22,7 +22,7 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={"/home"}>
+              <Link className="nav-link" aria-current="page" to={"/home"}>
                 Home
               </Link>
             </li>
@@ -32,54 +32,6 @@ export default function Navbar(props) {
               </Link>
             </li>
           </ul> 
-          {/* <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-primary" type="submit">
-              Search
-            </button>
-          </form> */}
-          {/* <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="inlineRadioOptions"
-              id="inlineRadio1"
-              value="option1"
-            />
-            <label class="form-check-label" for="inlineRadio1">
-              Greenish Dark
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="inlineRadioOptions"
-              id="inlineRadio2"
-              value="option2"
-            />
-            <label class="form-check-label" for="inlineRadio2">
-              Reddish Dark
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="radio"
-              onClick={props.greyishToggleMode}
-              name="inlineRadioOptions"
-              id="inlineRadio3"
-              value="option3"
-            />
-            <label class="form-check-label" for="inlineRadio3">
-              Greyish Dark
-            </label>
-          </div> */}
           <div
             className={`form-check form-switch ${
               props.mode === "light" ? "dark" : "light"
